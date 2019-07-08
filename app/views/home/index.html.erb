@@ -1,0 +1,66 @@
+<div class="panel panel-default" id="file_zone">
+  <div class="panel-heading">
+    Please select a CSV file from your local system
+    and click Submit for processing
+  </div>
+  <div class="panel-body">
+    <%= form_for :fileupload, url: home_upload_path, remote: true do |f| %>
+      <div class="form-group row">
+        <label for="fileupload_identifier" class="col-md-4 col-form-label text-md-right">Identifier</label>
+        <div class="col-md-6">
+          <%= f.text_field :identifier, value: @identifier.identifier, class: 'form-control' %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="file" class="col-md-4 col-form-label text-md-right">Password</label>
+        <div class="col-md-6">
+          <%= f.file_field :csv_file %>
+        </div>
+      </div>
+      <div class="col-md-6 offset-md-4">
+        <button type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </div>
+    <%- end %>
+  </div>
+</div>
+
+
+<div class="panel panel-default" id="results_zone" style="display: none;">
+  <div class="panel-heading">
+    Results
+  </div>
+  <div class="panel-body">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Identifier</th>
+        <th>Email</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Phone</th>
+        <th>Result</th>
+      </tr>
+      </thead>
+      <tbody id="results_table">
+      <tr>
+        <td>11</td>
+        <td>11</td>
+        <td>11</td>
+        <td>11</td>
+        <td>11</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>11</td>
+        <td>11</td>
+        <td>11</td>
+        <td>11</td>
+        <td>11</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

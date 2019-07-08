@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  username:
+  password:
+
+development:
+  <<: *default
+  database: async_csv
+
+test:
+  <<: *default
+  database: async_csv_test
+
+staging:
+  <<: *default
+
+production:
+  <<: *default

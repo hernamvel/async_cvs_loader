@@ -1,0 +1,28 @@
+en:
+  errors:
+    csv:
+      no_file: A file should be given
+      invalid_mime: Incorrect mime type
+  activerecord:
+    errors:
+     models:
+        user:
+          attributes:
+            phone:
+              invalid_format: invalid phone format
+              invalid_first_digit: first digit should not be 0
+              invalid_third_digit: third digit should not be 0
+              number_of_digits: phone should have 10 digits
+            email:
+              invalid: invalid email
+            first:
+              only_alpha: can only have alpha characters
+              invalid_length: must have at least 2 chars
+            last:
+              only_alpha: can only have alpha characters
+              invalid_length: must have at least 2 chars
+              last_with_no_first: can't be specified if first is not present
+        identifier:
+          attributes:
+            identifier:
+              only_alnum: can only have alphanumeric characters
