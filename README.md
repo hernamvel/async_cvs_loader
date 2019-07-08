@@ -58,6 +58,9 @@ rspec
 You will find a 96.88% coverage as reported by SimpleCov, just filtering a 
 couple of action_cable files.
 
+If you need a well formed CSV to test the app manually, you can take
+this one: spec/fixtures/files/valid.csv
+
 ## Use the app in Heroku
 
 This app is deployed in heroku and you can access it from:
