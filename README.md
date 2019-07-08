@@ -58,6 +58,15 @@ rspec
 You will find a 96.88% coverage as reported by SimpleCov, just filtering a 
 couple of action_cable files.
 
+## Use the app in Heroku
+
+This app is deployed in heroku and you can access it from:
+
+https://asynccsv.herokuapp.com/
+
+As this is deployed on a Herolu's free tier, please allow a couple
+of seconds for the app and websockets to 'warm up' on the first request.
+
 ## Code quality
 
 Before submitting, I ran RuboCop over this code removing most of the warnings/weak warnings 
