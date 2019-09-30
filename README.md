@@ -1,6 +1,6 @@
 # Async CSV loader
 
-Code exercise to be reviewed by SpringBig team. This app has a page
+General Demo to show my skills in Rails. This app has a page
 that receives an identifer an a well formed CSV file and when clicking
 at the submit button, it will process it asynchronously rendering the final
 result to the user.
